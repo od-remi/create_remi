@@ -9,6 +9,7 @@
     <body>
         <h1>Blog Name</h1>
         <p class="create">[<a href="/posts/create">create</a>]</p>
+
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
@@ -19,6 +20,7 @@
         </div>
         <div class='paginate'>
             {{ $posts->links()}}
+
         </div>
     </body>
 </html>
