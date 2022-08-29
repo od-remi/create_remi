@@ -31,6 +31,11 @@ public function update(PostRequest $request, Post $post)
     
     return redirect('/posts/' . $post->id);
 }
+public function destroy(Post $post)
+{
+    $post->delete();
+    return redirect('/');
+}
 }
 
 
